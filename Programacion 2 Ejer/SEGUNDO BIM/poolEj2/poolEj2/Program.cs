@@ -13,10 +13,14 @@ namespace poolEj2
         static string[] subjects = {
         "Matemáticas", "Física", "Química", "Biología",
         "Historia", "Geografía", "Lengua", "Inglés",
-        "Arte", "Informática"
+        "Arte", "Informática","Matemáticas2", "Física2", "Química2", "Biología2",
+        "Historia2", "Geografía2", "Lengua2", "Inglés2",
+        "Arte2", "Informática2"
     };
         static void Main(string[] args)
         {
+            int processorCount = Environment.ProcessorCount;
+            Console.WriteLine("Número de hilos disponibles en el CPU: " + processorCount);
             Console.WriteLine("Iniciando estudio de materias utilizando Thread Pool...");
 
             // Colocar cada materia en la cola de tareas del Thread Pool

@@ -4,3 +4,9 @@ D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\poolEj2\poolEj2\bin\Debug\poolEj2.pdb
 D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\poolEj2\poolEj2\obj\Debug\poolEj2.csprojResolveAssemblyReference.cache
 D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\poolEj2\poolEj2\obj\Debug\poolEj2.exe
 D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\poolEj2\poolEj2\obj\Debug\poolEj2.pdb
+F:\Incos\2024\Programcion2\Programacion 2 Ejer\SEGUNDO BIM\poolEj2\poolEj2\bin\Debug\poolEj2.exe.config
+F:\Incos\2024\Programcion2\Programacion 2 Ejer\SEGUNDO BIM\poolEj2\poolEj2\obj\Debug\poolEj2.exe
+F:\Incos\2024\Programcion2\Programacion 2 Ejer\SEGUNDO BIM\poolEj2\poolEj2\obj\Debug\poolEj2.pdb
+F:\Incos\2024\Programcion2\Programacion 2 Ejer\SEGUNDO BIM\poolEj2\poolEj2\bin\Debug\poolEj2.exe
+F:\Incos\2024\Programcion2\Programacion 2 Ejer\SEGUNDO BIM\poolEj2\poolEj2\bin\Debug\poolEj2.pdb
+F:\Incos\2024\Programcion2\Programacion 2 Ejer\SEGUNDO BIM\poolEj2\poolEj2\obj\Debug\poolEj2.csprojResolveAssemblyReference.cache

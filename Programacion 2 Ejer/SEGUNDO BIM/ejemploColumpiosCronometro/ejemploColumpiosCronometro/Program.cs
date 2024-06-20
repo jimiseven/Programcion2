@@ -11,7 +11,7 @@ namespace ejemploColumpiosCronometro
     class Program
     {
         // Número de columpios disponibles
-        static Semaphore swings = new Semaphore(6, 6); // 6 columpios
+        static Semaphore swings = new Semaphore(12, 12); // 12 columpios
 
         // Lista de nombres de los niños
         static string[] kids = {

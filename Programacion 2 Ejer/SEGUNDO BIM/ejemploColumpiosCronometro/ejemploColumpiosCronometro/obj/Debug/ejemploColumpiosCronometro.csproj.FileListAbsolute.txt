@@ -7,3 +7,9 @@ D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploCol
 F:\Incos\2024\Programacion 2\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\bin\Debug\ejemploColumpiosCronometro.exe.config
 F:\Incos\2024\Programacion 2\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\obj\Debug\ejemploColumpiosCronometro.exe
 F:\Incos\2024\Programacion 2\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\obj\Debug\ejemploColumpiosCronometro.pdb
+F:\Incos\2024\Programcion2\Programacion 2 Ejer\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\bin\Debug\ejemploColumpiosCronometro.exe.config
+F:\Incos\2024\Programcion2\Programacion 2 Ejer\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\obj\Debug\ejemploColumpiosCronometro.exe
+F:\Incos\2024\Programcion2\Programacion 2 Ejer\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\obj\Debug\ejemploColumpiosCronometro.pdb
+F:\Incos\2024\Programcion2\Programacion 2 Ejer\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\bin\Debug\ejemploColumpiosCronometro.exe
+F:\Incos\2024\Programcion2\Programacion 2 Ejer\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\bin\Debug\ejemploColumpiosCronometro.pdb
+F:\Incos\2024\Programcion2\Programacion 2 Ejer\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\obj\Debug\ejemploColumpiosCronometro.csprojResolveAssemblyReference.cache
