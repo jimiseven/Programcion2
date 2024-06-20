@@ -1,0 +1,1 @@
+Imaginemos que tenemos una aplicación que necesita leer, procesar y guardar datos de varios archivos grandes. Hacerlo secuencialmente podría llevar mucho tiempo porque cada archivo se procesa uno tras otro. En cambio, podemos usar hilos para procesar varios archivos al mismo tiempo, aprovechando múltiples núcleos de la CPU.

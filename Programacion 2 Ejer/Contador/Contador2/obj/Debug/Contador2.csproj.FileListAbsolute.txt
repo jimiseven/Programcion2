@@ -1,0 +1,6 @@
+c:\Users\CASE\documents\visual studio 2015\Projects\Contador\Contador2\bin\Debug\Contador2.exe.config
+c:\Users\CASE\documents\visual studio 2015\Projects\Contador\Contador2\bin\Debug\Contador2.exe
+c:\Users\CASE\documents\visual studio 2015\Projects\Contador\Contador2\bin\Debug\Contador2.pdb
+c:\Users\CASE\documents\visual studio 2015\Projects\Contador\Contador2\obj\Debug\Contador2.csprojResolveAssemblyReference.cache
+c:\Users\CASE\documents\visual studio 2015\Projects\Contador\Contador2\obj\Debug\Contador2.exe
+c:\Users\CASE\documents\visual studio 2015\Projects\Contador\Contador2\obj\Debug\Contador2.pdb

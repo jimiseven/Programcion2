@@ -1,0 +1,5 @@
+c:\users\case\documents\visual studio 2015\Projects\Contador\Contador\bin\Debug\Contador.exe.config
+c:\users\case\documents\visual studio 2015\Projects\Contador\Contador\bin\Debug\Contador.exe
+c:\users\case\documents\visual studio 2015\Projects\Contador\Contador\bin\Debug\Contador.pdb
+c:\users\case\documents\visual studio 2015\Projects\Contador\Contador\obj\Debug\Contador.exe
+c:\users\case\documents\visual studio 2015\Projects\Contador\Contador\obj\Debug\Contador.pdb
