@@ -1,0 +1,9 @@
+D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\bin\Debug\ejemploColumpiosCronometro.exe.config
+D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\bin\Debug\ejemploColumpiosCronometro.exe
+D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\bin\Debug\ejemploColumpiosCronometro.pdb
+D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\obj\Debug\ejemploColumpiosCronometro.csprojResolveAssemblyReference.cache
+D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\obj\Debug\ejemploColumpiosCronometro.exe
+D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\obj\Debug\ejemploColumpiosCronometro.pdb
+F:\Incos\2024\Programacion 2\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\bin\Debug\ejemploColumpiosCronometro.exe.config
+F:\Incos\2024\Programacion 2\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\obj\Debug\ejemploColumpiosCronometro.exe
+F:\Incos\2024\Programacion 2\SEGUNDO BIM\ejemploColumpiosCronometro\ejemploColumpiosCronometro\obj\Debug\ejemploColumpiosCronometro.pdb

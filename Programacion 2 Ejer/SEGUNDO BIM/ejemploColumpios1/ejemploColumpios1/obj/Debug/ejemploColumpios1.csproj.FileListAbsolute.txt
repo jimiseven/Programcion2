@@ -1,0 +1,6 @@
+D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpios1\ejemploColumpios1\bin\Debug\ejemploColumpios1.exe.config
+D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpios1\ejemploColumpios1\obj\Debug\ejemploColumpios1.csprojResolveAssemblyReference.cache
+D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpios1\ejemploColumpios1\bin\Debug\ejemploColumpios1.exe
+D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpios1\ejemploColumpios1\bin\Debug\ejemploColumpios1.pdb
+D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpios1\ejemploColumpios1\obj\Debug\ejemploColumpios1.exe
+D:\INCOS 2024\PROGRAMACION III\SEGUNDO BIM\ejemploColumpios1\ejemploColumpios1\obj\Debug\ejemploColumpios1.pdb
