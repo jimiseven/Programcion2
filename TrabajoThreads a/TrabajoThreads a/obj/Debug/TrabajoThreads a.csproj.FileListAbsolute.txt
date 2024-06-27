@@ -1,0 +1,2 @@
+c:\users\localhome\documents\visual studio 2015\Projects\TrabajoThreads a\TrabajoThreads a\bin\Debug\TrabajoThreads a.exe.config
+D:\incos\2024\Programcion2\TrabajoThreads a\TrabajoThreads a\bin\Debug\TrabajoThreads a.exe.config
