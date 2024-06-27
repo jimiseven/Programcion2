@@ -1,2 +1,7 @@
 c:\users\localhome\documents\visual studio 2015\Projects\TrabajoThreads a\TrabajoThreads a\bin\Debug\TrabajoThreads a.exe.config
 D:\incos\2024\Programcion2\TrabajoThreads a\TrabajoThreads a\bin\Debug\TrabajoThreads a.exe.config
+D:\incos\2024\Programcion2\TrabajoThreads a\TrabajoThreads a\bin\Debug\TrabajoThreads a.exe
+D:\incos\2024\Programcion2\TrabajoThreads a\TrabajoThreads a\bin\Debug\TrabajoThreads a.pdb
+D:\incos\2024\Programcion2\TrabajoThreads a\TrabajoThreads a\obj\Debug\TrabajoThreads a.csprojResolveAssemblyReference.cache
+D:\incos\2024\Programcion2\TrabajoThreads a\TrabajoThreads a\obj\Debug\TrabajoThreads a.exe
+D:\incos\2024\Programcion2\TrabajoThreads a\TrabajoThreads a\obj\Debug\TrabajoThreads a.pdb

@@ -1,0 +1,6 @@
+D:\incos\2024\Programcion2\EjerThreads\Ejer1\bin\Debug\Ejer1.exe.config
+D:\incos\2024\Programcion2\EjerThreads\Ejer1\bin\Debug\Ejer1.exe
+D:\incos\2024\Programcion2\EjerThreads\Ejer1\bin\Debug\Ejer1.pdb
+D:\incos\2024\Programcion2\EjerThreads\Ejer1\obj\Debug\Ejer1.csprojResolveAssemblyReference.cache
+D:\incos\2024\Programcion2\EjerThreads\Ejer1\obj\Debug\Ejer1.exe
+D:\incos\2024\Programcion2\EjerThreads\Ejer1\obj\Debug\Ejer1.pdb
