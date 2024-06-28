@@ -1,0 +1,5 @@
+C:\Users\LocalHome\Desktop\Examen Es\PR3 Segundita Torrico Peredo Jimi Joe\PR3 Segundita Torrico Peredo Jimi Joe\bin\Debug\PR3 Segundita Torrico Peredo Jimi Joe.exe.config
+C:\Users\LocalHome\Desktop\Examen Es\PR3 Segundita Torrico Peredo Jimi Joe\PR3 Segundita Torrico Peredo Jimi Joe\bin\Debug\PR3 Segundita Torrico Peredo Jimi Joe.exe
+C:\Users\LocalHome\Desktop\Examen Es\PR3 Segundita Torrico Peredo Jimi Joe\PR3 Segundita Torrico Peredo Jimi Joe\bin\Debug\PR3 Segundita Torrico Peredo Jimi Joe.pdb
+C:\Users\LocalHome\Desktop\Examen Es\PR3 Segundita Torrico Peredo Jimi Joe\PR3 Segundita Torrico Peredo Jimi Joe\obj\Debug\PR3 Segundita Torrico Peredo Jimi Joe.exe
+C:\Users\LocalHome\Desktop\Examen Es\PR3 Segundita Torrico Peredo Jimi Joe\PR3 Segundita Torrico Peredo Jimi Joe\obj\Debug\PR3 Segundita Torrico Peredo Jimi Joe.pdb
