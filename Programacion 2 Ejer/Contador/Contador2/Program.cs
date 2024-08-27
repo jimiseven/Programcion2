@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using Word = Microsoft.Office.Interop.Word;
 
 namespace CrearBoletinNotas
@@ -9,14 +10,19 @@ namespace CrearBoletinNotas
         [STAThread]
         static void Main(string[] args)
         {
-            // Definir el arreglo de estudiantes y notas
-            string[][] estudiantes = new string[3][];
-            estudiantes[0] = new string[] { "Juan", "85", "78", "92" }; // Nombre, Matemáticas, LenguajeDesdeGion, Religión
-            estudiantes[1] = new string[] { "María", "90", "51", "95" };
-            estudiantes[2] = new string[] { "Pedro", "70", "75", "80" };
+            // Leer el archivo de texto
+            string rutaArchivoNotas = @"D:\incos\2024\docs\NotasEstudiantes.txt"; // Ruta del archivo de texto
+            string[] lineas = File.ReadAllLines(rutaArchivoNotas);
+
+            // Procesar las líneas y crear el arreglo de estudiantes
+            string[][] estudiantes = new string[lineas.Length][];
+            for (int i = 0; i < lineas.Length; i++)
+            {
+                estudiantes[i] = lineas[i].Split(','); // Dividir cada línea por comas
+            }
 
             // Especificar la ruta donde se guardará el archivo automáticamente
-            string rutaArchivo = @"D:\INCOS 2024\PROGRAMACION III\docs\BoletinNotas.docx"; // Cambia 'TuUsuario' por tu nombre de usuario
+            string rutaArchivo = @"D:\incos\2024\docs\BoletinNotas.docx";
 
             // Crear una nueva aplicación de Word
             Word.Application wordApp = new Word.Application();
@@ -110,7 +116,7 @@ namespace CrearBoletinNotas
                 {
                     string notaTexto = tabla.Cell(i, 2).Range.Text.Trim(); // Eliminar espacios y caracteres no deseados
                     notaTexto = notaTexto.Replace("\r", "").Replace("\a", ""); // Eliminar caracteres de fin de párrafo o de celda
-                    int nota;  // Declarar la variable 'nota' antes del uso en TryParse
+                    int nota;
                     if (int.TryParse(notaTexto, out nota) && nota < umbralNota)
                     {
                         tabla.Cell(i, 2).Range.Font.Color = Word.WdColor.wdColorRed;
