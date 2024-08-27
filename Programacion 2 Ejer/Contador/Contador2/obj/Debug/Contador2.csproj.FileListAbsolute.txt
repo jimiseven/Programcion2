@@ -21,3 +21,7 @@ D:\incos\2024\Programcion2\Programacion 2 Ejer\Contador\Contador2\obj\Debug\Cont
 D:\incos\2024\Programcion2\Programacion 2 Ejer\Contador\Contador2\bin\Debug\Contador2.exe
 D:\incos\2024\Programcion2\Programacion 2 Ejer\Contador\Contador2\bin\Debug\Contador2.pdb
 D:\incos\2024\Programcion2\Programacion 2 Ejer\Contador\Contador2\obj\Debug\Contador2.csprojResolveAssemblyReference.cache
+D:\incos\2024\Programcion2\Programacion 2 Ejer\Contador\Contador2\bin\Debug\EPPlus.dll
+D:\incos\2024\Programcion2\Programacion 2 Ejer\Contador\Contador2\bin\Debug\EPPlus.Interfaces.dll
+D:\incos\2024\Programcion2\Programacion 2 Ejer\Contador\Contador2\bin\Debug\EPPlus.System.Drawing.dll
+D:\incos\2024\Programcion2\Programacion 2 Ejer\Contador\Contador2\bin\Debug\EPPlus.xml

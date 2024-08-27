@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using OfficeOpenXml;
 using Word = Microsoft.Office.Interop.Word;
 
 namespace CrearBoletinNotas
@@ -10,15 +11,29 @@ namespace CrearBoletinNotas
         [STAThread]
         static void Main(string[] args)
         {
-            // Leer el archivo de texto
-            string rutaArchivoNotas = @"D:\incos\2024\docs\NotasEstudiantes.txt"; // Ruta del archivo de texto
-            string[] lineas = File.ReadAllLines(rutaArchivoNotas);
+            // Ruta del archivo Excel
+            string rutaArchivoExcel = @"D:\incos\2024\docs\NotasEstudiantes.xlsx";
 
-            // Procesar las líneas y crear el arreglo de estudiantes
-            string[][] estudiantes = new string[lineas.Length][];
-            for (int i = 0; i < lineas.Length; i++)
+            // Inicializar EPPlus y leer el archivo Excel
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            var package = new ExcelPackage(new FileInfo(rutaArchivoExcel));
+            var worksheet = package.Workbook.Worksheets[0]; // Leer la primera hoja de cálculo
+
+            // Contar el número de filas no vacías
+            int filas = worksheet.Dimension.End.Row;
+
+            // Crear un arreglo para almacenar los datos
+            string[][] estudiantes = new string[filas - 1][]; // Asume que la primera fila son encabezados
+
+            for (int i = 2; i <= filas; i++) // Empieza desde la fila 2 para omitir encabezados
             {
-                estudiantes[i] = lineas[i].Split(','); // Dividir cada línea por comas
+                estudiantes[i - 2] = new string[]
+                {
+                    worksheet.Cells[i, 1].Text, // Nombre
+                    worksheet.Cells[i, 2].Text, // Nota Matemáticas
+                    worksheet.Cells[i, 3].Text, // Nota Lenguaje
+                    worksheet.Cells[i, 4].Text  // Nota Religión
+                };
             }
 
             // Especificar la ruta donde se guardará el archivo automáticamente
@@ -75,14 +90,6 @@ namespace CrearBoletinNotas
 
                 tabla.Borders[Word.WdBorderType.wdBorderHorizontal].LineStyle = Word.WdLineStyle.wdLineStyleSingle;
                 tabla.Borders[Word.WdBorderType.wdBorderVertical].LineStyle = Word.WdLineStyle.wdLineStyleSingle;
-
-                // Opcional: Puedes cambiar el grosor de los bordes si quieres que sean más gruesos
-                tabla.Borders[Word.WdBorderType.wdBorderLeft].LineWidth = Word.WdLineWidth.wdLineWidth050pt;
-                tabla.Borders[Word.WdBorderType.wdBorderRight].LineWidth = Word.WdLineWidth.wdLineWidth050pt;
-                tabla.Borders[Word.WdBorderType.wdBorderTop].LineWidth = Word.WdLineWidth.wdLineWidth050pt;
-                tabla.Borders[Word.WdBorderType.wdBorderBottom].LineWidth = Word.WdLineWidth.wdLineWidth050pt;
-                tabla.Borders[Word.WdBorderType.wdBorderHorizontal].LineWidth = Word.WdLineWidth.wdLineWidth025pt;
-                tabla.Borders[Word.WdBorderType.wdBorderVertical].LineWidth = Word.WdLineWidth.wdLineWidth025pt;
 
                 // Rellenar la tabla con el nombre y las notas
                 tabla.Cell(1, 1).Range.Text = "NOMBRE";
