@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Word = Microsoft.Office.Interop.Word;
 
 namespace CrearBoletinNotas
@@ -109,14 +110,12 @@ namespace CrearBoletinNotas
                 {
                     string notaTexto = tabla.Cell(i, 2).Range.Text.Trim(); // Eliminar espacios y caracteres no deseados
                     notaTexto = notaTexto.Replace("\r", "").Replace("\a", ""); // Eliminar caracteres de fin de párrafo o de celda
-
                     int nota;  // Declarar la variable 'nota' antes del uso en TryParse
                     if (int.TryParse(notaTexto, out nota) && nota < umbralNota)
                     {
                         tabla.Cell(i, 2).Range.Font.Color = Word.WdColor.wdColorRed;
                     }
                 }
-
 
                 // Aplicar formato a las celdas de la tabla
                 for (int i = 1; i <= tabla.Rows.Count; i++)
@@ -145,10 +144,16 @@ namespace CrearBoletinNotas
 
             // Guardar el documento automáticamente en la ruta especificada
             wordDoc.SaveAs2(rutaArchivo);
+
+            // Cerrar el documento y la aplicación de Word
             wordDoc.Close();
             wordApp.Quit();
 
+            // Abrir el documento de Word automáticamente
+            Process.Start(rutaArchivo);
+
             Console.WriteLine("El boletín de notas se ha creado y guardado exitosamente en " + rutaArchivo);
+            Console.WriteLine("El documento se está abriendo...");
             Console.WriteLine("Presiona cualquier tecla para salir...");
             Console.ReadKey();
         }
