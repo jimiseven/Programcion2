@@ -1,58 +1,73 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Threading;
+using Word = Microsoft.Office.Interop.Word;
 
-namespace NumerosPares
+namespace CrearBoletinNotas
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
-            int totalPares = 1000;
-            int numHilos = 12;
-            int paresPorHilo = totalPares / numHilos;
+            // Definir el arreglo de estudiantes y notas
+            string[][] estudiantes = new string[3][];
+            estudiantes[0] = new string[] { "Juan", "85", "78", "92" }; // Nombre, Matemáticas, Lenguaje, Religión
+            estudiantes[1] = new string[] { "María", "90", "88", "95" };
+            estudiantes[2] = new string[] { "Pedro", "70", "75", "80" };
 
-            Thread[] threads = new Thread[numHilos];
+            // Especificar la ruta donde se guardará el archivo automáticamente
+            string rutaArchivo = @"F:\Incos\2024\Programcion2\Programcion2\docs\BoletinNotas.docx"; // Cambia 'TuUsuario' por tu nombre de usuario
 
-            // Crear un Stopwatch para medir el tiempo de ejecución
-            Stopwatch stopwatch = new Stopwatch();
+            // Crear una nueva aplicación de Word
+            Word.Application wordApp = new Word.Application();
+            Word.Document wordDoc = wordApp.Documents.Add();
 
-            // Iniciar el Stopwatch
-            stopwatch.Start();
+            // Establecer el título del documento
+            Word.Paragraph titulo = wordDoc.Content.Paragraphs.Add();
+            titulo.Range.Text = "Boletín de Notas";
+            titulo.Range.Font.Size = 24;
+            titulo.Range.Font.Bold = 1;
+            titulo.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
+            titulo.Range.InsertParagraphAfter();
 
-            // Crear y empezar los hilos
-            for (int i = 0; i < numHilos; i++)
+            // Añadir una línea vacía
+            Word.Paragraph lineaVacia = wordDoc.Content.Paragraphs.Add();
+            lineaVacia.Range.InsertParagraphAfter();
+
+            // Agregar los datos de los estudiantes
+            foreach (var estudiante in estudiantes)
             {
-                int start = i * paresPorHilo;
-                int end = (i + 1) * paresPorHilo;
-                threads[i] = new Thread(() => MostrarNumerosPares(start, end));
-                threads[i].Start();
+                Word.Paragraph parrafo = wordDoc.Content.Paragraphs.Add();
+                parrafo.Range.Text = "Estudiante: " + estudiante[0];
+                parrafo.Range.Font.Size = 14;
+                parrafo.Range.Font.Bold = 1;
+                parrafo.Alignment = Word.WdParagraphAlignment.wdAlignParagraphLeft;
+                parrafo.Range.InsertParagraphAfter();
+
+                parrafo = wordDoc.Content.Paragraphs.Add();
+                parrafo.Range.Text = "  Matemáticas: " + estudiante[1];
+                parrafo.Range.InsertParagraphAfter();
+
+                parrafo = wordDoc.Content.Paragraphs.Add();
+                parrafo.Range.Text = "  Lenguaje: " + estudiante[2];
+                parrafo.Range.InsertParagraphAfter();
+
+                parrafo = wordDoc.Content.Paragraphs.Add();
+                parrafo.Range.Text = "  Religión: " + estudiante[3];
+                parrafo.Range.InsertParagraphAfter();
+
+                // Añadir una línea vacía después de cada estudiante
+                parrafo = wordDoc.Content.Paragraphs.Add();
+                parrafo.Range.InsertParagraphAfter();
             }
 
-            // Esperar a que todos los hilos terminen
-            foreach (Thread thread in threads)
-            {
-                thread.Join();
-            }
+            // Guardar el documento automáticamente en la ruta especificada
+            wordDoc.SaveAs2(rutaArchivo);
+            wordDoc.Close();
+            wordApp.Quit();
 
-            // Detener el Stopwatch
-            stopwatch.Stop();
-
-            // Mostrar el tiempo de ejecución
-            Console.WriteLine("Tiempo total de ejecución: " + stopwatch.ElapsedMilliseconds + " ms");
-
-            // Esperar a que el usuario presione una tecla para finalizar el programa
-            Console.ReadLine();
-        }
-
-        static void MostrarNumerosPares(int start, int end)
-        {
-            for (int i = start; i < end; i++)
-            {
-                int numeroPar = i * 2;
-                Console.WriteLine(numeroPar);
-            }
+            Console.WriteLine("El boletín de notas se ha creado y guardado exitosamente en " + rutaArchivo);
+            Console.WriteLine("Presiona cualquier tecla para salir...");
+            Console.ReadKey();
         }
     }
 }
-

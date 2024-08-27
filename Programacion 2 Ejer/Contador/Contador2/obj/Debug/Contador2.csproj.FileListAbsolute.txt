@@ -4,3 +4,9 @@ c:\Users\CASE\documents\visual studio 2015\Projects\Contador\Contador2\bin\Debug
 c:\Users\CASE\documents\visual studio 2015\Projects\Contador\Contador2\obj\Debug\Contador2.csprojResolveAssemblyReference.cache
 c:\Users\CASE\documents\visual studio 2015\Projects\Contador\Contador2\obj\Debug\Contador2.exe
 c:\Users\CASE\documents\visual studio 2015\Projects\Contador\Contador2\obj\Debug\Contador2.pdb
+F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador2\bin\Debug\Contador2.exe.config
+F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador2\obj\Debug\Contador2.exe
+F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador2\obj\Debug\Contador2.pdb
+F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador2\bin\Debug\Contador2.exe
+F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador2\bin\Debug\Contador2.pdb
+F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador2\obj\Debug\Contador2.csprojResolveAssemblyReference.cache

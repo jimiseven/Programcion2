@@ -3,3 +3,7 @@ c:\users\case\documents\visual studio 2015\Projects\Contador\Contador\bin\Debug\
 c:\users\case\documents\visual studio 2015\Projects\Contador\Contador\bin\Debug\Contador.pdb
 c:\users\case\documents\visual studio 2015\Projects\Contador\Contador\obj\Debug\Contador.exe
 c:\users\case\documents\visual studio 2015\Projects\Contador\Contador\obj\Debug\Contador.pdb
+F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador\bin\Debug\Contador.exe.config
+F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador\obj\Debug\Contador.exe
+F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador\obj\Debug\Contador.pdb
+F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador\obj\Debug\Contador.csprojResolveAssemblyReference.cache
