@@ -13,3 +13,5 @@ D:\INCOS 2024\PROGRAMACION III\Programcion2\Programacion 2 Ejer\Contador\Contado
 D:\INCOS 2024\PROGRAMACION III\Programcion2\Programacion 2 Ejer\Contador\Contador2\obj\Debug\Contador2.exe
 D:\INCOS 2024\PROGRAMACION III\Programcion2\Programacion 2 Ejer\Contador\Contador2\obj\Debug\Contador2.pdb
 D:\INCOS 2024\PROGRAMACION III\Programcion2\Programacion 2 Ejer\Contador\Contador2\obj\Debug\Contador2.csprojResolveAssemblyReference.cache
+D:\INCOS 2024\PROGRAMACION III\Programcion2\Programacion 2 Ejer\Contador\Contador2\bin\Debug\Contador2.exe
+D:\INCOS 2024\PROGRAMACION III\Programcion2\Programacion 2 Ejer\Contador\Contador2\bin\Debug\Contador2.pdb

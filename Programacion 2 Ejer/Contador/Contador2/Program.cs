@@ -16,7 +16,7 @@ namespace CrearBoletinNotas
             estudiantes[2] = new string[] { "Pedro", "70", "75", "80" };
 
             // Especificar la ruta donde se guardará el archivo automáticamente
-            string rutaArchivo = @"F:\Incos\2024\Programcion2\Programcion2\docs\BoletinNotas.docx"; // Cambia 'TuUsuario' por tu nombre de usuario
+            string rutaArchivo = @"D:\INCOS 2024\PROGRAMACION III\docs\BoletinNotas.docx"; // Cambia 'TuUsuario' por tu nombre de usuario
 
             // Crear una nueva aplicación de Word
             Word.Application wordApp = new Word.Application();
