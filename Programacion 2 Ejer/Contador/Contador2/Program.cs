@@ -11,7 +11,7 @@ namespace CrearBoletinNotas
             // Definir el arreglo de estudiantes y notas
             string[][] estudiantes = new string[3][];
             estudiantes[0] = new string[] { "Juan", "85", "78", "92" }; // Nombre, Matemáticas, Lenguaje, Religión
-            estudiantes[1] = new string[] { "María", "90", "88", "95" };
+            estudiantes[1] = new string[] { "María", "90", "51", "95" };
             estudiantes[2] = new string[] { "Pedro", "70", "75", "80" };
 
             // Especificar la ruta donde se guardará el archivo automáticamente
@@ -77,8 +77,6 @@ namespace CrearBoletinNotas
                 tabla.Borders[Word.WdBorderType.wdBorderHorizontal].LineWidth = Word.WdLineWidth.wdLineWidth025pt;
                 tabla.Borders[Word.WdBorderType.wdBorderVertical].LineWidth = Word.WdLineWidth.wdLineWidth025pt;
 
-
-
                 // Rellenar la tabla con el nombre y las notas
                 tabla.Cell(1, 1).Range.Text = "NOMBRE";
                 tabla.Cell(1, 2).Range.Text = estudiante[0]; // Nombre del estudiante
@@ -109,12 +107,16 @@ namespace CrearBoletinNotas
                 int umbralNota = 60;
                 for (int i = 2; i <= tabla.Rows.Count; i++)
                 {
-                    int nota;
-                    if (int.TryParse(tabla.Cell(i, 2).Range.Text.Trim(), out nota) && nota < umbralNota)
+                    string notaTexto = tabla.Cell(i, 2).Range.Text.Trim(); // Eliminar espacios y caracteres no deseados
+                    notaTexto = notaTexto.Replace("\r", "").Replace("\a", ""); // Eliminar caracteres de fin de párrafo o de celda
+
+                    int nota;  // Declarar la variable 'nota' antes del uso en TryParse
+                    if (int.TryParse(notaTexto, out nota) && nota < umbralNota)
                     {
                         tabla.Cell(i, 2).Range.Font.Color = Word.WdColor.wdColorRed;
                     }
                 }
+
 
                 // Aplicar formato a las celdas de la tabla
                 for (int i = 1; i <= tabla.Rows.Count; i++)
