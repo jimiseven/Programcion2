@@ -7,3 +7,6 @@ F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador\bi
 F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador\obj\Debug\Contador.exe
 F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador\obj\Debug\Contador.pdb
 F:\Incos\2024\Programcion2\Programcion2\Programacion 2 Ejer\Contador\Contador\obj\Debug\Contador.csprojResolveAssemblyReference.cache
+D:\INCOS 2024\PROGRAMACION III\Programcion2\Programacion 2 Ejer\Contador\Contador\bin\Debug\Contador.exe.config
+D:\INCOS 2024\PROGRAMACION III\Programcion2\Programacion 2 Ejer\Contador\Contador\obj\Debug\Contador.exe
+D:\INCOS 2024\PROGRAMACION III\Programcion2\Programacion 2 Ejer\Contador\Contador\obj\Debug\Contador.pdb

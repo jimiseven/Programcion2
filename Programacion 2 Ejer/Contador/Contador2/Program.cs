@@ -11,12 +11,12 @@ namespace CrearBoletinNotas
         {
             // Definir el arreglo de estudiantes y notas
             string[][] estudiantes = new string[3][];
-            estudiantes[0] = new string[] { "Juan", "85", "78", "92" }; // Nombre, Matemáticas, Lenguaje, Religión
+            estudiantes[0] = new string[] { "Juan", "85", "78", "92" }; // Nombre, Matemáticas, LenguajeDesdeGion, Religión
             estudiantes[1] = new string[] { "María", "90", "51", "95" };
             estudiantes[2] = new string[] { "Pedro", "70", "75", "80" };
 
             // Especificar la ruta donde se guardará el archivo automáticamente
-            string rutaArchivo = @"F:\Incos\2024\Programcion2\Programcion2\docs\BoletinNotas.docx"; // Cambia 'TuUsuario' por tu nombre de usuario
+            string rutaArchivo = @"D:\INCOS 2024\PROGRAMACION III\docs\BoletinNotas.docx"; // Cambia 'TuUsuario' por tu nombre de usuario
 
             // Crear una nueva aplicación de Word
             Word.Application wordApp = new Word.Application();
