@@ -11,7 +11,7 @@ namespace CrearBoletinNotas
         {
             // Definir el arreglo de estudiantes y notas
             string[][] estudiantes = new string[3][];
-            estudiantes[0] = new string[] { "Juan", "85", "78", "92" }; // Nombre, Matemáticas, Lenguaje, Religión
+            estudiantes[0] = new string[] { "Juan", "85", "78", "92" }; // Nombre, Matemáticas, LenguajeDesdeGion, Religión
             estudiantes[1] = new string[] { "María", "90", "51", "95" };
             estudiantes[2] = new string[] { "Pedro", "70", "75", "80" };
 
