@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Componentes.Properties
+namespace Try2.Properties
 {
 
 
