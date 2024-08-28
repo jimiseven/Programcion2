@@ -62,10 +62,11 @@ namespace Try2
                 {
                     estudiantes[i - 2] = new string[]
                     {
-                        worksheet.Cells[i, 1].Text, // Nombre
-                        worksheet.Cells[i, 2].Text, // Nota Matemáticas
-                        worksheet.Cells[i, 3].Text, // Nota Lenguaje
-                        worksheet.Cells[i, 4].Text  // Nota Religión
+                worksheet.Cells[i, 1].Text, // Nombre
+                worksheet.Cells[i, 2].Text, // Nota Matemáticas
+                worksheet.Cells[i, 3].Text, // Nota Lenguaje
+                worksheet.Cells[i, 4].Text, // Nota Religión
+                worksheet.Cells[i, 5].Text  // Observaciones
                     };
                 }
 
@@ -109,7 +110,7 @@ namespace Try2
                 {
                     // Crear la tabla en el rango especificado
                     Word.Range range = wordDoc.Content.Paragraphs.Add().Range;
-                    Word.Table tabla = wordDoc.Tables.Add(range, 3, 2); // 3 filas, 2 columnas
+                    Word.Table tabla = wordDoc.Tables.Add(range, 4, 2); // 4 filas, 2 columnas
                     tabla.Borders.Enable = 1;
 
                     // Aplicar estilos de bordes a cada borde individual
@@ -131,7 +132,6 @@ namespace Try2
                     tabla.Cell(3, 1).Range.Text = "LENGUAJE";
                     tabla.Cell(3, 2).Range.Text = estudiante[2]; // Nota de Lenguaje
 
-                    tabla.Rows.Add();
                     tabla.Cell(4, 1).Range.Text = "RELIGIÓN";
                     tabla.Cell(4, 2).Range.Text = estudiante[3]; // Nota de Religión
 
@@ -149,7 +149,7 @@ namespace Try2
 
                     // Resaltar notas bajas en rojo
                     int umbralNota = 60;
-                    for (int i = 2; i <= tabla.Rows.Count; i++)
+                    for (int i = 2; i <= 4; i++)
                     {
                         string notaTexto = tabla.Cell(i, 2).Range.Text.Trim(); // Eliminar espacios y caracteres no deseados
                         notaTexto = notaTexto.Replace("\r", "").Replace("\a", ""); // Eliminar caracteres de fin de párrafo o de celda
@@ -171,7 +171,7 @@ namespace Try2
                     // Añadir una fila para observaciones
                     tabla.Rows.Add();
                     tabla.Cell(tabla.Rows.Count, 1).Range.Text = "Observaciones:";
-                    tabla.Cell(tabla.Rows.Count, 1).Merge(tabla.Cell(tabla.Rows.Count, 2)); // Combinar celdas para comentario
+                    tabla.Cell(tabla.Rows.Count, 2).Range.Text = estudiante[4]; // Observaciones del estudiante
                     tabla.Cell(tabla.Rows.Count, 1).Range.Italic = 1;
                     tabla.Cell(tabla.Rows.Count, 1).Range.Font.Size = 12;
 
@@ -201,6 +201,12 @@ namespace Try2
             {
                 MessageBox.Show("No se seleccionó ninguna ubicación para guardar el archivo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
