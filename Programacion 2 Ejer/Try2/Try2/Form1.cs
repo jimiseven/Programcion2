@@ -202,7 +202,7 @@ namespace Try2
         }
         private void label1_Click(object sender, EventArgs e)
         {
-            // Aquí puedes manejar lo que sucede cuando se hace clic en label1
+            //error
         }
     }
 }
