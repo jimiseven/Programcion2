@@ -16,14 +16,28 @@ namespace Try2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CrearBoletin();
+            // Configurar el filtro del diálogo para que solo muestre archivos de Excel
+            openFileDialog1.Filter = "Archivos de Excel (*.xlsx)|*.xlsx|Todos los archivos (*.*)|*.*";
+            openFileDialog1.FilterIndex = 1;
+            openFileDialog1.RestoreDirectory = true;
+
+            // Mostrar el cuadro de diálogo y verificar si el usuario seleccionó un archivo
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // Obtener la ruta del archivo seleccionado
+                string rutaArchivoExcel = openFileDialog1.FileName;
+
+                // Ahora llamamos al método CrearBoletin con la ruta del archivo seleccionada
+                CrearBoletin(rutaArchivoExcel);
+            }
+            else
+            {
+                MessageBox.Show("No se seleccionó ningún archivo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
-        private void CrearBoletin()
+        private void CrearBoletin(string rutaArchivoExcel)
         {
-            // Ruta del archivo Excel
-            string rutaArchivoExcel = @"D:\incos\2024\docs\NotasEstudiantes.xlsx";
-
             // Inicializar EPPlus y leer el archivo Excel
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             var package = new ExcelPackage(new FileInfo(rutaArchivoExcel));
