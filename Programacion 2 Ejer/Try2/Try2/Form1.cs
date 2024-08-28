@@ -27,8 +27,11 @@ namespace Try2
                 // Obtener la ruta del archivo seleccionado
                 string rutaArchivoExcel = openFileDialog1.FileName;
 
-                // Ahora llamamos al método CrearBoletin con la ruta del archivo seleccionada
-                CrearBoletin(rutaArchivoExcel);
+                // Obtener el curso ingresado
+                string curso = textBoxCurso.Text;
+
+                // Ahora llamamos al método CrearBoletin con la ruta del archivo seleccionada y el curso
+                CrearBoletin(rutaArchivoExcel, curso);
             }
             else
             {
@@ -36,7 +39,7 @@ namespace Try2
             }
         }
 
-        private void CrearBoletin(string rutaArchivoExcel)
+        private void CrearBoletin(string rutaArchivoExcel, string curso)
         {
             // Configurar el filtro del diálogo para que solo permita guardar archivos de Word
             saveFileDialog1.Filter = "Documento de Word (*.docx)|*.docx";
@@ -62,11 +65,11 @@ namespace Try2
                 {
                     estudiantes[i - 2] = new string[]
                     {
-                worksheet.Cells[i, 1].Text, // Nombre
-                worksheet.Cells[i, 2].Text, // Nota Matemáticas
-                worksheet.Cells[i, 3].Text, // Nota Lenguaje
-                worksheet.Cells[i, 4].Text, // Nota Religión
-                worksheet.Cells[i, 5].Text  // Observaciones
+                        worksheet.Cells[i, 1].Text, // Nombre
+                        worksheet.Cells[i, 2].Text, // Nota Matemáticas
+                        worksheet.Cells[i, 3].Text, // Nota Lenguaje
+                        worksheet.Cells[i, 4].Text, // Nota Religión
+                        worksheet.Cells[i, 5].Text  // Observaciones
                     };
                 }
 
@@ -78,7 +81,7 @@ namespace Try2
                 foreach (Word.Section section in wordDoc.Sections)
                 {
                     Word.HeaderFooter header = section.Headers[Word.WdHeaderFooterIndex.wdHeaderFooterPrimary];
-                    header.Range.Text = "Nombre de la Institución - Boletín de Notas";
+                    header.Range.Text = "Nombre de la Institución - Boletín de Notas\nCurso: " + curso;
                     header.Range.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
                     header.Range.Font.Size = 14;
                     header.Range.Font.Bold = 1;
@@ -95,7 +98,7 @@ namespace Try2
 
                 // Establecer el título del documento
                 Word.Paragraph titulo = wordDoc.Content.Paragraphs.Add();
-                titulo.Range.Text = "Boletín de Notas";
+                titulo.Range.Text = "Boletín de Notas del Curso " + curso;
                 titulo.Range.Font.Size = 14;
                 titulo.Range.Font.Bold = 1;
                 titulo.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
@@ -180,11 +183,6 @@ namespace Try2
                     espacio.Range.InsertParagraphAfter();
                 }
 
-                // Añadir espacio para la firma del profesor
-                Word.Paragraph firma = wordDoc.Content.Paragraphs.Add();
-                firma.Range.Text = "\n\nFirma del Profesor/Tutor: ____________________";
-                firma.Range.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphLeft;
-
                 // Guardar el documento automáticamente en la ruta especificada por el usuario
                 wordDoc.SaveAs2(rutaArchivoWord);
 
@@ -202,11 +200,9 @@ namespace Try2
                 MessageBox.Show("No se seleccionó ninguna ubicación para guardar el archivo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
-
         private void label1_Click(object sender, EventArgs e)
         {
-
+            // Aquí puedes manejar lo que sucede cuando se hace clic en label1
         }
     }
 }

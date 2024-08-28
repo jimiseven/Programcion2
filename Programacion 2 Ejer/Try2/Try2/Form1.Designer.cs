@@ -32,6 +32,9 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxCurso = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -59,11 +62,39 @@
             this.label1.Text = "Generador de Boletines";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(5, 150);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(270, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Seleccionar el excel de notas para generar los boletines";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(37, 102);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Seleccionar curso";
+            // 
+            // textBoxCurso
+            // 
+            this.textBoxCurso.Location = new System.Drawing.Point(142, 95);
+            this.textBoxCurso.Name = "textBoxCurso";
+            this.textBoxCurso.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCurso.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.textBoxCurso);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -79,6 +110,9 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxCurso;
     }
 }
 
